@@ -9,8 +9,8 @@ public class MQTTClient implements Runnable {
 	}
 
 	public void connect() {
-		// client, user and device details
-		final String serverUrl = "tcp://broker.hivemq.com:1883"; /* ssl://mqtt.cumulocity.com:8883 for a secure connection */
+		// server, client and user details
+		final String serverUrl = "tcp://broker.hivemq.com:1883";
 		final String clientId = "admin";
 		final String username = "admin";
 		final String password = "password";

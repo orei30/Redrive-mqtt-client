@@ -109,7 +109,7 @@ public class ProcessData implements Runnable {
         try {
             //TODO: update file path to the python script we want to run on the end of a drive.
             ProcessBuilder pb = new ProcessBuilder("python","filepath", userName, startTime, "" + startTime);
-            Process p = pb.start();
+            pb.start();
         } catch (Exception e) {
             System.out.println(e);
         }
